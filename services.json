@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Wildlife Photographer",
+    "description": "A wildlife photographer is someone who specializes in capturing stunning images of animals in their natural habitats. They may work as freelancers or for publications, such as magazines, newspapers, and websites."
+  },
+  {
+    "id": 2,
+    "title": "Nature Photographer",
+    "description": "A nature photographer is someone who photographs landscapes, plants, and animals found in the natural world. They may also capture images of geological features, such as mountains, rivers, and canyons."
+  },
+  {
+    "id": 3,
+    "title": "Wildlife Filmmaker",
+    "description": "Wildlife filmmakers produce documentaries and films that showcase the beauty and diversity of wildlife. They use advanced camera equipment to capture footage of animals in their natural habitats."
+  },
+  {
+    "id": 4,
+    "title": "Conservation Photographer",
+    "description": "A conservation photographer focuses on capturing images that promote environmental conservation and awareness. They may work for conservation organizations, such as non-profits or government agencies, to document endangered species, habitat destruction, and other environmental issues."
+  },
+  {
+    "id": 5,
+    "title": "Photography Educator",
+    "description": "Photography educators teach photography skills and techniques to aspiring photographers. They may teach in schools, colleges, or workshops."
+  },
+  {
+    "id": 6,
+    "title": "Wildlife Photography Tour Guide",
+    "description": "Wildlife Photography Tour Guide"
+  }
+]

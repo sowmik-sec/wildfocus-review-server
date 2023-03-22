@@ -12,8 +12,8 @@ app.get("/", (req, res) => {
   res.send("Hello World of expressjs");
 });
 
-app.get("/services", (req, res) => {
-  res.json(services);
+app.get("/services-3", (req, res) => {
+  res.send(services.slice(0, 3));
 });
 
 app.listen(port, () => {

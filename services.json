@@ -4,12 +4,12 @@
     "serviceImg": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZGxpZmV8ZW58MHx8MHx8&w=1000&q=80",
     "instructorName": "Will Nicholls",
     "instructorImage": "http://www.jwct.org.uk/uploads/9/7/5/7/97570364/will-nicholls_orig.jpg",
-    "title": "Wildlife Photographer",
+    "title": "Wildlife Photography",
     "description": "A wildlife photographer is someone who specializes in capturing stunning images of animals in their natural habitats. They may work as freelancers or for publications, such as magazines, newspapers, and websites."
   },
   {
     "id": 2,
-    "title": "Nature Photographer",
+    "title": "Nature Photography",
     "serviceImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg",
     "instructorName": "Will Burrard-Lucas",
     "instructorImage": "https://photos.willbl.com/wp-content/uploads/WBL-Makgadikgadi-Will-BL-140118155012-1024x683.jpg",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "title": "Wildlife Filmmaker",
+    "title": "Wildlife Filmmaking",
     "serviceImg": "https://www.balisafarimarinepark.com/wp-content/uploads/2022/09/animals.jpg",
     "instructorName": "Chris Schmid",
     "instructorImage": "https://cdn.shopify.com/s/files/1/0713/7479/9142/files/chris-schmid-12302_81b99ca9-6d52-4495-a701-8ad43591e584.jpg?v=1676638967&width=3840",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "title": "Conservation Photographer",
+    "title": "Conservation Photography",
     "serviceImg": "https://files.worldwildlife.org/wwfcmsprod/images/goal_wildlife_Rhino_release_295808_Wildlife/hero_small/14174tawqd_MID_295808.jpg",
     "instructorName": "Sandesh Kdur",
     "instructorImage": "https://i.natgeofe.com/k/96458831-ca66-490d-9369-915a33dddb82/sandesh-kadur_4x3.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "title": "Wildlife Photography Tour Guide",
+    "title": "Wildlife Photography Tour Guiding",
     "serviceImg": "https://theinsatiabletraveler.com/wp-content/uploads/2016/06/sportnoy_20140613_6.jpg",
     "instructorName": "Tin Man Lee",
     "instructorImage": "https://cdn1.i-scmp.com/sites/default/files/2015/09/23/faaee3cc01d8f2bde42aae1916f25939.jpg",

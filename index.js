@@ -18,6 +18,12 @@ app.get("/services", (req, res) => {
 app.get("/services-3", (req, res) => {
   res.send(services.slice(0, 3));
 });
+app.get("/services/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  console.log(id);
+  const service = services.find((srv) => srv.id === id);
+  res.send(service);
+});
 
 app.listen(port, () => {
   console.log("wildfocus review server is listening on port ", port);

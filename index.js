@@ -48,6 +48,13 @@ const run = async () => {
       const service = await serviceCollection.findOne(query);
       res.send(service);
     });
+    app.get("/review/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { serviceId: id };
+      const cursor = reviewCollection.find(query);
+      const reviews = await cursor.toArray();
+      res.send(reviews);
+    });
     app.post("/review", async (req, res) => {
       const review = req.body;
       const result = await reviewCollection.insertOne(review);

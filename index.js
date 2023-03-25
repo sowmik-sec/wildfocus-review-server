@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -35,24 +35,33 @@ const run = async () => {
       const services = await cursor.toArray();
       res.send(services);
     });
+    app.get("/services-3", async (req, res) => {
+      const query = {};
+      const cursor = serviceCollection.find(query).limit(3);
+      const services = await cursor.toArray();
+      res.send(services);
+    });
+    app.get("/services/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const service = await serviceCollection.findOne(query);
+      res.send(service);
+    });
   } finally {
   }
 };
 
 run().catch((err) => console.error(err));
 
-// app.get("/services", (req, res) => {
-//   res.send(services);
+// app.get("/services-3", (req, res) => {
+//   res.send(services.slice(0, 3));
 // });
-app.get("/services-3", (req, res) => {
-  res.send(services.slice(0, 3));
-});
-app.get("/services/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-  console.log(id);
-  const service = services.find((srv) => srv.id === id);
-  res.send(service);
-});
+// app.get("/services/:id", (req, res) => {
+//   const id = parseInt(req.params.id);
+//   console.log(id);
+//   const service = services.find((srv) => srv.id === id);
+//   res.send(service);
+// });
 
 app.listen(port, () => {
   console.log("wildfocus review server is listening on port ", port);

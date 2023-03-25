@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "serviceImg": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2lsZGxpZmV8ZW58MHx8MHx8&w=1000&q=80",
     "instructorName": "Will Nicholls",
     "instructorImage": "http://www.jwct.org.uk/uploads/9/7/5/7/97570364/will-nicholls_orig.jpg",
@@ -8,7 +7,6 @@
     "description": "Will Nicholls is a talented wildlife photographer whose passion for nature is evident in every image he captures. He has a unique ability to connect with his subjects and to capture their personalities and behaviors in a way that is both captivating and authentic. Will's photographs are visually stunning and his technical skill is second to none. He is known for his patience, persistence, and dedication to his craft. Will is also a gifted teacher and mentor, and his willingness to share his knowledge and experience has helped countless aspiring photographers achieve their goals. He is a true asset to the wildlife photography community and his work is a testament to his talent and expertise in the field."
   },
   {
-    "id": 2,
     "title": "Nature Photography",
     "serviceImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg",
     "instructorName": "Will Burrard-Lucas",
@@ -16,7 +14,6 @@
     "description": "Will Burrard-Lucas is an incredibly talented nature photographer whose work showcases the beauty and diversity of the natural world. He has a keen eye for composition and his images are both breathtaking and thought-provoking. Will's photographs have been featured in top publications and have earned him numerous awards and accolades. His passion for wildlife conservation is evident in his work, and he is known for using his photography to raise awareness and inspire action. Will is highly respected in the industry for his technical expertise and his willingness to push the boundaries of conventional photography. He is a true artist and a master of his craft, and his contributions to the field of nature photography are truly remarkable."
   },
   {
-    "id": 3,
     "title": "Wildlife Filmmaking",
     "serviceImg": "https://www.balisafarimarinepark.com/wp-content/uploads/2022/09/animals.jpg",
     "instructorName": "Chris Schmid",
@@ -24,7 +21,6 @@
     "description": "Chris Schmid is an exceptional wildlife filmmaker who has produced some of the most captivating and visually stunning films in the industry. He has an innate ability to tell compelling stories that connect viewers with the natural world, and his passion for wildlife conservation shines through in every frame. Chris's attention to detail and his mastery of cinematography techniques have earned him numerous awards and accolades. He is highly regarded by his peers and is known for his professionalism, creativity, and dedication to his craft. Chris Schmid is a true master of wildlife filmmaking and his work is a testament to his talent and expertise in the field."
   },
   {
-    "id": 4,
     "title": "Conservation Photography",
     "serviceImg": "https://files.worldwildlife.org/wwfcmsprod/images/goal_wildlife_Rhino_release_295808_Wildlife/hero_small/14174tawqd_MID_295808.jpg",
     "instructorName": "Sandesh Kdur",
@@ -32,7 +28,6 @@
     "description": "Sandesh Kadur is an outstanding conservation photographer who has made significant contributions to the field of wildlife conservation through his powerful imagery. He has a deep understanding of the environmental issues facing our planet and uses his photography to raise awareness and inspire action. Sandesh's work is visually stunning and emotionally impactful, and he has a unique ability to capture the beauty and fragility of our natural world. His dedication to conservation has earned him a reputation as a trusted and respected voice in the field. Sandesh Kadur is a true champion of wildlife and a role model for aspiring conservation photographers."
   },
   {
-    "id": 5,
     "title": "Wildlife Photography Educator",
     "serviceImg": "https://thumbs.dreamstime.com/b/large-group-african-safari-animals-wildlife-conservation-concept-174172993.jpg",
     "instructorName": "Sudhir Shivaram",
@@ -40,7 +35,6 @@
     "description": "Sudhir Shivaram is an exceptional wildlife photography educator with a wealth of knowledge and experience in his field. He has a natural talent for teaching and his passion for wildlife and photography is evident in every class he teaches. Sudhir's teaching style is engaging, practical and tailored to the needs of his students. He has an exceptional ability to break down complex concepts into easy-to-understand explanations and his attention to detail is unmatched. His students highly recommend him and appreciate his willingness to share his knowledge and provide constructive feedback on their work. Sudhir Shivaram is a true asset to the world of wildlife photography education."
   },
   {
-    "id": 6,
     "title": "Wildlife Photography Tour Guiding",
     "serviceImg": "https://theinsatiabletraveler.com/wp-content/uploads/2016/06/sportnoy_20140613_6.jpg",
     "instructorName": "Tin Man Lee",

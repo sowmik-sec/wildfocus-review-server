@@ -29,6 +29,7 @@ const run = async () => {
     const serviceCollection = client
       .db("wildFocusReview")
       .collection("services");
+    const reviewCollection = client.db("wildFocusReview").collection("review");
     app.get("/services", async (req, res) => {
       const query = {};
       const cursor = serviceCollection.find(query);
@@ -46,6 +47,11 @@ const run = async () => {
       const query = { _id: new ObjectId(id) };
       const service = await serviceCollection.findOne(query);
       res.send(service);
+    });
+    app.post("/review", async (req, res) => {
+      const review = req.body;
+      const result = await reviewCollection.insertOne(review);
+      res.send(result);
     });
   } finally {
   }

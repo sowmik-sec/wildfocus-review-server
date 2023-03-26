@@ -74,10 +74,7 @@ const run = async () => {
     });
     app.post("/services", async (req, res) => {
       const service = req.body;
-      const oldServices = await serviceCollection.find({}).toArray();
-      const allServices = [service, ...oldServices];
-      const del = await serviceCollection.deleteMany({});
-      const result = await serviceCollection.insertMany(allServices);
+      const result = await serviceCollection.insertOne(service);
       res.send(result);
     });
     app.delete("/review/:id", async (req, res) => {
@@ -91,16 +88,6 @@ const run = async () => {
 };
 
 run().catch((err) => console.error(err));
-
-// app.get("/services-3", (req, res) => {
-//   res.send(services.slice(0, 3));
-// });
-// app.get("/services/:id", (req, res) => {
-//   const id = parseInt(req.params.id);
-//   console.log(id);
-//   const service = services.find((srv) => srv.id === id);
-//   res.send(service);
-// });
 
 app.listen(port, () => {
   console.log("wildfocus review server is listening on port ", port);

@@ -53,12 +53,19 @@ const run = async () => {
       const query = { serviceId: id };
       const cursor = reviewCollection.find(query);
       const reviews = await cursor.toArray();
-      res.send(reviews);
+      const reviewsWithTimestamp = reviews.map((review) => {
+        if (!review.timestamp) {
+          const currentTime = new Date();
+          review.timestamp = currentTime.toLocaleString();
+        }
+        return review;
+      });
+      res.send(reviewsWithTimestamp);
     });
     app.post("/review", async (req, res) => {
       const review = req.body;
       const currentTime = new Date();
-      review.timestamp = currentTime;
+      review.timestamp = currentTime.toLocaleString();
       const result = await reviewCollection.insertOne(review);
       res.send(result);
     });

@@ -57,6 +57,8 @@ const run = async () => {
     });
     app.post("/review", async (req, res) => {
       const review = req.body;
+      const currentTime = new Date();
+      review.timestamp = currentTime;
       const result = await reviewCollection.insertOne(review);
       res.send(result);
     });

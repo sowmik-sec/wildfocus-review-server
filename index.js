@@ -74,7 +74,10 @@ const run = async () => {
     });
     app.post("/services", async (req, res) => {
       const service = req.body;
-      const result = await serviceCollection.insertOne(service);
+      const oldServices = await serviceCollection.find({}).toArray();
+      const allServices = [service, ...oldServices];
+      const del = await serviceCollection.deleteMany({});
+      const result = await serviceCollection.insertMany(allServices);
       res.send(result);
     });
     app.delete("/review/:id", async (req, res) => {

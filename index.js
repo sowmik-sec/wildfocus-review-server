@@ -14,9 +14,6 @@ app.get("/", (req, res) => {
   res.send("Hello World of expressjs");
 });
 
-// pass: f0nGTcho5GzNpIyU
-// user: wildfocusreview
-
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.xgh8h2c.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
@@ -61,6 +58,12 @@ const run = async () => {
         return review;
       });
       res.send(reviewsWithTimestamp);
+    });
+    app.get("/my-review", async (req, res) => {
+      const query = { email: req.query.email };
+      const cursor = reviewCollection.find(query);
+      const review = await cursor.toArray();
+      res.send(review);
     });
     app.post("/review", async (req, res) => {
       const review = req.body;

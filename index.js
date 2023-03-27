@@ -75,6 +75,24 @@ const run = async () => {
       const review = await reviewCollection.findOne(query);
       res.send(review);
     });
+    app.put("/review-update/:id", async (req, res) => {
+      const query = { _id: new ObjectId(req.params.id) };
+      const update = req.body;
+      const updateDoc = {
+        $set: {
+          review: update.editReview,
+          displayName: update.displayName,
+          email: update.email,
+          photoURL: update.photoURL,
+          serviceId: update.serviceId,
+        },
+      };
+      const result = await reviewCollection.updateOne(query, updateDoc);
+      if (result.modifiedCount === 0) {
+        return res.status(404).json({ message: "No document was updated" });
+      }
+      res.send(result);
+    });
     app.post("/review", async (req, res) => {
       const review = req.body;
       const currentTime = new Date();
